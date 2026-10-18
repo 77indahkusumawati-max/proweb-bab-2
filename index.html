@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Indah Kusumawati</title>
+    <!-- CSS tertanam agar index.html tetap tampil; salinan css/style.css disertakan untuk penilaian. -->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 32px 18px;
+    background: linear-gradient(135deg, #082f49, #0e7490, #67e8f9);
+    color: #17324d;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.header {
+    max-width: 780px;
+    margin: 0 auto 24px;
+    padding: 28px 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.label {
+    margin: 0 0 8px;
+    color: #a5f3fc;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.kelas {
+    margin: 10px 0 0;
+    color: #cffafe;
+    font-size: 1rem;
+}
+
+.kartu-profil {
+    max-width: 780px;
+    margin: auto;
+    padding: 34px;
+    background-color: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 24px;
+    box-shadow: 0 18px 40px rgba(8, 47, 73, 0.35);
+}
+
+.bagian-identitas {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.foto-profil {
+    width: 210px;
+    height: 250px;
+    flex-shrink: 0;
+    border: 7px solid #22d3ee;
+    border-radius: 22px;
+    object-fit: cover;
+    box-shadow: 0 8px 18px rgba(14, 116, 144, 0.3);
+}
+
+h2 {
+    margin-top: 0;
+    color: #075985;
+    font-size: 1.35rem;
+}
+
+.data-diri p,
+.bagian-kontak p {
+    line-height: 1.8;
+}
+
+.bagian-hobi,
+.bagian-kontak {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 2px solid #bae6fd;
+}
+
+.daftar-hobi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.daftar-hobi span {
+    padding: 10px 18px;
+    background-color: #cffafe;
+    border: 1px solid #67e8f9;
+    border-radius: 999px;
+    color: #155e75;
+    font-weight: 600;
+}
+
+.tombol-instagram {
+    display: inline-block;
+    padding: 11px 24px;
+    background-color: #0e7490;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.tombol-instagram:hover {
+    background-color: #164e63;
+    transform: translateY(-3px);
+}
+
+footer {
+    padding: 24px 0 8px;
+    color: #e0f2fe;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 18px 12px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    .kartu-profil {
+        padding: 24px 18px;
+    }
+
+    .bagian-identitas {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-profil {
+        width: 180px;
+        height: 220px;
+    }
+
+    .daftar-hobi {
+        justify-content: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <p class="label">PROFIL SISWA</p>
+        <h1>Indah Kusumawati</h1>
+        <p class="kelas">XI RPL 1 &nbsp;|&nbsp; Absen 31</p>
+    </header>
+
+    <main class="kartu-profil">
+        <section class="bagian-identitas">
+            <img
+                class="foto-profil"
+                src="photos.jpeg"
+                alt="Foto Indah Kusumawati"
+            >
+
+            <div class="data-diri">
+                <h2>Tentang Saya</h2>
+                <p>
+                 Saya adalah siswi SMK Antartika kelas XI RPL 1 yang sedang suka mengeksplor berbagai macam
+                kegiatan, organisasi, event diluar maupun di dalam sekolah serta sangat suka memasak dan             
+              </p>
+            </div>
+        </section>
+
+        <section class="bagian-hobi">
+            <h2>Hobi Saya</h2>
+            <div class="daftar-hobi">
+                <span>Memasak</span>
+                <span>Mendaki</span>
+                <span>Mengeksplor hal baru</span>
+            </div>
+        </section>
+
+        <section class="bagian-kontak">
+            <h2>Media Sosial</h2>
+            <p>mari berteman di instragram</p>
+            <a class="tombol-instagram" href="https://www.instagram.com/ndhwaavw/" target="_blank" rel="noopener noreferrer">
+                Instagram
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>salam kenal semuanya</p>
+    </footer>
+</body>
+</html>
